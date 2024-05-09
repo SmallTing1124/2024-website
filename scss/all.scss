@@ -1,0 +1,667 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+body {
+    color: #3B3B3B;
+
+    @media (max-width:991px) {
+        padding-top: 60px;
+    }
+}
+
+
+.navbar {
+    background-color: #fff;
+
+    @media (max-width:991px) {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+}
+
+.btn-dark {
+    background-color: #000 !important;
+}
+
+.unitTitle {
+    padding-top: 9%;
+    padding-bottom: 5%;
+
+    @media (max-width:991px) {
+        padding-bottom: 40px;
+    }
+
+    span {
+        display: inline-block;
+        padding: 0 10px;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 80%;
+            position: absolute;
+
+            top: 50%;
+            transform: translateY(-50%);
+            padding-top: 50%;
+            background-image: url(../images/pic-uniticon.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        &::before {
+            right: 100%;
+        }
+
+        &::after {
+            left: 100%;
+            transform: translateY(-50%) scaleX(-1);
+
+        }
+    }
+
+    small {
+        display: block;
+        font-size: 1rem;
+        color: #919191;
+        margin-top: 1rem;
+    }
+}
+
+
+.tagGroup {
+    margin-top: 1.5rem;
+
+    @media (max-width:991px) {
+        margin-top: 1rem;
+    }
+
+    span {
+        display: inline-block;
+        border-radius: 16px;
+        padding: 4px 12px;
+        font-size: 1rem;
+        line-height: 1.2;
+        background-color: #F1F1F1;
+        margin-right: 0.5rem;
+    }
+}
+
+
+.Img {
+    .innerImg {
+        width: 100%;
+        padding-top: 70%;
+
+        .image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+
+// homePage-Warp
+
+.bannerArea {
+    .Txt {
+        @media (max-width:991px) {
+            text-align: center;
+            padding-top: 3rem;
+        }
+
+        p {
+            i {
+                font-style: normal;
+                display: inline-block;
+                padding: 0 6px;
+                line-height: 1;
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-size: contain;
+                    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+                    background-repeat: no-repeat;
+                    background-position: bottom;
+                    z-index: -1;
+                }
+
+            }
+
+            span {
+                @media (max-width:991px) {
+                    display: block;
+                }
+            }
+        }
+
+        small {
+            font-size: 0.9rem;
+            color: #C1C1C1;
+        }
+
+        .social-Group {
+            display: flex;
+            padding: 0;
+            margin-top: 2rem;
+
+
+            @media (max-width:991px) {
+                justify-content: center;
+            }
+
+            li {
+                a {
+                    display: block;
+                    padding: 6px;
+                    font-size: 1.8rem;
+                    color: #5B5B5B;
+                }
+            }
+        }
+    }
+
+    .Img {
+        .innerImg {
+            &::after {
+                content: '';
+                width: 110%;
+                height: 110%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-image: url(../images/home/homepage-services-bg.png);
+                background-size: auto 100%;
+                background-position: left center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+// home
+.WorkArea {
+    .workList {
+        padding: 0;
+
+        .item {
+            background-size: cover;
+
+            @media (max-width:991px) {
+                // background: none !important;
+            }
+
+            @media (max-width:414px) {
+                background-size: auto 55%;
+            }
+
+            .itemBox {
+                @media (min-width:992px) {
+                    min-height: 800px;
+                }
+
+
+                .Txt {
+                    width: 446px;
+                    max-width: 100%;
+
+
+                    @media (min-width:992px) {
+                        color: #fff;
+                        border-radius: 10px;
+                        background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(8px);
+                        -webkit-backdrop-filter: blur(8px);
+                        padding: 80px 40px;
+                    }
+
+                    @media (max-width:991px) {
+                        width: 100%;
+                        background-color: #fff;
+                        padding-top: 24px;
+                        padding-bottom: 48px;
+                        text-align: center;
+                    }
+
+                    .tagGroup {
+
+                        color: #0A1013;
+
+                        @media (min-width:992px) {
+                            border-bottom: 1px solid #fff;
+                            padding-bottom: 3rem;
+                        }
+                    }
+                }
+
+
+
+            }
+
+            &.item-1 {
+                .Img {
+                    padding-top: 10%;
+
+                    .innerImg {
+                        @media (min-width:992px) {
+                            padding-top: 100%;
+                        }
+
+                        .image {
+                            background-position: bottom;
+                        }
+                    }
+                }
+            }
+
+            &.item-2 {
+                @media (max-width:991px) {
+                    padding-top: 70%;
+                }
+
+                @media (min-width:992px) {
+                    &::before {
+                        content: '';
+                        width: 50%;
+                        height: 100%;
+                        background-color: #0A1013;
+                        opacity: 0.5;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+            }
+
+            &.item-3 {
+                @media (min-width:992px) {
+                    &::before {
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        background-color: #0A1013;
+                        opacity: 0.5;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                .Img {
+                    .innerImg {
+                        .image {
+                            background-size: contain;
+
+                            @media (max-width:991px) {
+                                background-size: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.serviceArea {
+    padding-bottom: 10%;
+    min-height: 50vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fafafa;
+   
+
+    @media (max-width:991px) {
+        padding: 80px 35px;
+    }
+}
+
+.serviceList {
+    .item {
+        a {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+
+            text-align: center;
+            background: linear-gradient(135deg, #000 0%, #000 50%, #1E1E1E 50%, #1E1E1E 100%);
+            padding-top: 100%;
+            border-radius: 16px;
+
+            .Txt {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+
+
+            // &::before {
+            //     content: '';
+            //     position: absolute;
+            //     width: 90%;
+            //     padding-top: 90%;
+
+            //     top: 50%;
+            //     left: 50%;
+            //     transform: translate(-50%, -50%);
+            //     border-radius: 16px;
+            //     overflow: hidden;
+            // }
+            img {
+                height: 80px;
+            }
+
+
+        }
+    }
+}
+
+.articleArea {
+    padding-bottom: 10%;
+
+    .articleList {
+        .item {
+            a {
+                display: block;
+                text-decoration: none;
+                color: #0A1013;
+                padding-bottom: 3rem;
+
+                .Img {
+                    .innerImg {
+                        padding-top: 57%;
+                        border-radius: 8px;
+                        overflow: hidden;
+                    }
+                }
+
+                .Txt {
+                    padding: 8px;
+                    text-align: justify;
+
+                    .subBox {
+                        margin-top: 1rem;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .tag {
+                            border-radius: 16px;
+                            padding: 4px 12px;
+                            background-color: #F1F1F1;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+footer {
+    padding: 6% 0;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+    background-size: cover;
+    background-position: center;
+
+
+    @media (max-width:991px) {
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+        padding: 10% 0 20%;
+    }
+
+
+    .btnBox {
+        display: flex;
+
+        .btn {
+            display: flex;
+            align-items: center;
+            padding-left: 24px;
+
+            i {
+                font-size: 2rem;
+                display: inline-block;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+
+.workPage {
+    .bannerArea {
+        padding: 5% 0;
+        display: flex;
+        justify-content: center;
+        background-color: #FAFAFA;
+
+        @media (max-width:991px) {
+            padding: 30% 0 10%;
+        }
+
+        .introTxt {
+            font-size: 1.5rem;
+            line-height: 2;
+            padding: 3rem 0;
+            display: inline-block;
+            z-index: 10;
+
+            @media (max-width:991px) {
+                line-height: 1.5;
+                font-size: 1.3rem;
+                padding: 0;
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+
+            &::before {
+                top: 0;
+                right: 100%;
+                background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true);
+
+                @media (max-width:991px) {
+                    top: auto;
+                    bottom: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            &::after {
+                bottom: 0;
+                left: 100%;
+                background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true);
+
+                @media (max-width:991px) {
+                    display: none;
+                }
+            }
+
+        }
+
+        .subTitle {
+            color: #5B5B5B;
+
+            &::after {
+                content: '';
+                display: block;
+                margin: 8px auto;
+                width: 30px;
+                height: 2px;
+                background-color: #C1C1C1;
+            }
+        }
+    }
+
+    .contentArea {
+        padding: 5% 0;
+
+        @media (max-width:991px) {
+            padding: 10% 0;
+        }
+
+        .Img {
+            .innerImg {
+                padding-top: 63%;
+            }
+        }
+
+        .Txt {
+            padding: 16px;
+        }
+    }
+}
+
+.cardList {
+    .item {
+        margin-bottom: 5rem;
+
+        @media (max-width: 991px) {
+            margin-bottom: 3rem;
+        }
+
+        .Img {
+            .innerImg {
+                border-radius: 8px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+
+.blogPage {
+    padding: 5% 10%;
+
+    .tageList {
+        height: 100%;
+        background-color: #FAFAFA;
+        border-radius: 8px;
+        padding-left: 0;
+        padding-top: 80px;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            a {
+                display: block;
+                text-decoration: none;
+                color: #0A1013;
+                padding: 10px 80px;
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    .articleList {
+        .item {
+            margin-bottom: 4rem;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: #3B3B3B;
+
+                .Img {
+                    border: 1px solid #F1F1F1;
+                    border-radius: 8px;
+                    overflow: hidden;
+                }
+
+                .Txt {
+                    .titleBox {
+                        font-size: 1.25rem;
+                        margin: 1rem 0;
+                    }
+
+                    .text {
+                        p {
+                            text-align: justify;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+
+                    .subTxt {
+                        margin-bottom: 8px;
+
+                        .tag {
+                            border-radius: 16px;
+                            padding: 4px 12px;
+                            background-color: #F1F1F1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .relatedWorks {
+        margin-top: 5%;
+        .workList {
+            padding: 0;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #0A1013;
+
+                    .Txt {
+                        padding: 16px 0;
+
+                        .titleBox {
+                            margin-bottom: 1rem;
+                            font-size: 1.25rem;
+                        }
+
+                        .subTxt {
+                            .tag {
+                                border-radius: 16px;
+                                padding: 4px 12px;
+                                background-color: #F1F1F1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
