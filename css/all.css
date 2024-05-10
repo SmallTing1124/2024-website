@@ -452,6 +452,11 @@ a {
   padding: 8px;
   text-align: justify;
 }
+@media (max-width: 991px) {
+  .articleArea .articleList .item a .Txt {
+    padding: 16px;
+  }
+}
 .articleArea .articleList .item a .Txt .subBox {
   margin-top: 1rem;
   display: flex;
@@ -692,6 +697,15 @@ body::-webkit-scrollbar {
   border: 1px solid #F1F1F1;
   border-radius: 8px;
   overflow: hidden;
+}
+.blogPage .articleList .item a .Txt {
+  padding: 0.5rem;
+}
+@media (max-width: 991px) {
+  .blogPage .articleList .item a .Txt {
+    padding: 0;
+    padding-top: 1rem;
+  }
 }
 .blogPage .articleList .item a .Txt .titleBox {
   font-size: 1.25rem;

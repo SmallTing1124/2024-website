@@ -563,6 +563,9 @@ a {
                 .Txt {
                     padding: 8px;
                     text-align: justify;
+                    @media (max-width:991px) {
+                        padding: 16px;
+                    }
 
                     .subBox {
                         margin-top: 1rem;
@@ -850,6 +853,11 @@ body::-webkit-scrollbar {
                 }
 
                 .Txt {
+                    padding: 0.5rem;
+                    @media (max-width:991px) {
+                        padding: 0;
+                        padding-top: 1rem;
+                    }
                     .titleBox {
                         font-size: 1.25rem;
                         margin: 1rem 0;
