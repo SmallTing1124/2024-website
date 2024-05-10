@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     position: relative;
     box-sizing: border-box;
@@ -24,8 +26,18 @@ body {
     }
 }
 
+a {
+    display: block;
+    text-decoration: none;
+    color: #0A1013;
+}
+
 .btn-dark {
     background-color: #000 !important;
+}
+
+.text-gray {
+    color: #919191;
 }
 
 .unitTitle {
@@ -329,7 +341,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #fafafa;
-   
+
 
     @media (max-width:991px) {
         padding: 80px 35px;
@@ -358,23 +370,172 @@ body {
             }
 
 
-            // &::before {
-            //     content: '';
-            //     position: absolute;
-            //     width: 90%;
-            //     padding-top: 90%;
-
-            //     top: 50%;
-            //     left: 50%;
-            //     transform: translate(-50%, -50%);
-            //     border-radius: 16px;
-            //     overflow: hidden;
-            // }
             img {
                 height: 80px;
             }
 
 
+        }
+    }
+}
+
+.servicePage {
+
+    .serviceItem {
+        padding-bottom: 5%;
+
+        @media (max-width:991px) {
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+    }
+
+    .serviceSOP {
+        color: #fff;
+        background: linear-gradient(135deg, #000 0%, #000 50%, #1E1E1E 50%, #1E1E1E 100%);
+        padding-bottom: 5%;
+
+        @media (max-width:991px) {
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+        .sopList {
+            padding: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                background-color: #3B3B3B;
+                border: 1px solid #919191;
+                border-radius: 4px;
+                padding: 1rem 10px;
+                padding-left: 0;
+                margin-bottom: 3rem;
+
+
+
+                span {
+                    font-family: "Tourney", sans-serif;
+                    font-size: 4.5rem;
+                    padding: 0 3rem;
+                    color: #919191;
+
+                    @media (max-width:991px) {
+                        padding: 0 20px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    color: #E9E9E9;
+                }
+            }
+
+            li+li {
+                &::after {
+                    content: '⭣';
+                    position: absolute;
+                    bottom: 100%;
+                    text-align: center;
+                    width: 100%;
+                    display: block;
+                    line-height: 3rem;
+                    color: #3B3B3B;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .servicePrice {
+        padding-bottom: 5%;
+
+        .priceList {
+            .innerTxt {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #FAFAFA;
+                color: #5B5B5B;
+                border-radius: 8px;
+                padding: 32px;
+                white-space: nowrap;
+
+                img {
+                    height: 4rem;
+                }
+
+                .priceTitle {
+                    font-size: 1.75rem;
+                    margin: 0;
+                    display: inline-flex;
+                    align-items: center;
+
+
+                    &::after {
+                        content: '';
+                        width: 41px;
+                        height: 1px;
+                        background-color: #C1C1C1;
+                        display: inline-block;
+                        margin: 0 1rem;
+                    }
+                }
+
+                .PriceNum {
+                    font-size: 2rem;
+                    font-weight: 700;
+
+                    &::after {
+                        content: '起';
+                        font-size: 1rem;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .serviceCase {
+        background-color: #FAFAFA;
+        padding-bottom: 5%;
+
+        @media (max-width:991px) {
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+        .Img {
+            .innerImg {
+                border-radius: 8px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .serviceQA {
+        padding-bottom: 5%;
+
+        @media (max-width:991px) {
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+        .qaList {
+
+
+
+            .item {
+                .innerTxt {
+
+                    border: 1px solid #E9E9E9;
+                    border-radius: 8px;
+                    padding: 24px;
+
+                }
+
+            }
         }
     }
 }
@@ -431,11 +592,16 @@ footer {
     @media (max-width:991px) {
         background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
         padding: 10% 0 20%;
+        text-align: center;
     }
 
 
     .btnBox {
         display: flex;
+
+        @media (max-width:991px) {
+            margin-top: 2rem;
+        }
 
         .btn {
             display: flex;
@@ -544,51 +710,124 @@ footer {
             padding: 16px;
         }
     }
-}
 
-.cardList {
-    .item {
-        margin-bottom: 5rem;
+    .workList {
+        .item {
+            margin-bottom: 5rem;
+            color: #0A1013;
+            text-decoration: none;
+            cursor: pointer;
 
-        @media (max-width: 991px) {
-            margin-bottom: 3rem;
-        }
+            @media (max-width: 991px) {
+                margin-bottom: 3rem;
+            }
 
-        .Img {
-            .innerImg {
-                border-radius: 8px;
-                overflow: hidden;
+            .Img {
+                .innerImg {
+                    border-radius: 8px;
+                    overflow: hidden;
+                }
             }
         }
+    }
+
+    .modal-body {
+        img {
+            border-radius: 16px;
+            width: 100% !important;
+            height: auto !important;
+            margin-top: 2.5rem;
+        }
+
+        .infoList {
+            @media (min-width:992px) {
+                border-left: 1px solid #C1C1C1;
+
+            }
+
+            @media (max-width:991px) {
+                padding: 0;
+                padding-top: 1.5rem;
+                border-top: 1px solid #C1C1C1;
+                text-align: center;
+            }
+
+            li {
+                margin-bottom: 0.5rem;
+
+                @media (max-width:991px) {
+                    margin-bottom: 1rem;
+                }
+
+                span {
+                    @media (min-width:992px) {
+                        &::after {
+                            content: '：';
+                        }
+                    }
+
+                    @media (max-width:991px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+
     }
 }
 
 
+
+body::-webkit-scrollbar {
+    display: none;
+}
 .blogPage {
-    padding: 5% 10%;
+    .tagBox {
+        @media (max-width:991px) {
+            margin-bottom: 3rem;
+            overflow: hidden;
+        }
 
-    .tageList {
-        height: 100%;
-        background-color: #FAFAFA;
-        border-radius: 8px;
-        padding-left: 0;
-        padding-top: 80px;
-        display: flex;
-        display: flex;
-        flex-direction: column;
+        .tageList {
+            height: 100%;
+            background-color: #FAFAFA;
+            border-radius: 8px;
+            padding-left: 0;
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
 
-        li {
-            a {
-                display: block;
-                text-decoration: none;
-                color: #0A1013;
-                padding: 10px 80px;
-                font-size: 1.25rem;
+            @media (max-width:991px) {
+                padding: 10px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+
+            li {
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #0A1013;
+                    padding: 10px 80px;
+                    font-size: 1.25rem;
+
+                    @media (max-width:991px) {
+                        padding: 10px;
+                        white-space:nowrap;
+                    }
+                }
             }
         }
     }
+
 
     .articleList {
+        padding: 0;
+
         .item {
             margin-bottom: 4rem;
 
@@ -636,6 +875,7 @@ footer {
 
     .relatedWorks {
         margin-top: 5%;
+
         .workList {
             padding: 0;
 
