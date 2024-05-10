@@ -675,6 +675,11 @@ body::-webkit-scrollbar {
 .blogPage .articleList {
   padding: 0;
 }
+@media (min-width: 992px) {
+  .blogPage .articleList {
+    padding-right: 3rem;
+  }
+}
 .blogPage .articleList .item {
   margin-bottom: 4rem;
 }
@@ -707,6 +712,14 @@ body::-webkit-scrollbar {
   border-radius: 16px;
   padding: 4px 12px;
   background-color: #F1F1F1;
+}
+.blogPage .contextBox {
+  padding-top: 10%;
+}
+@media (min-width: 992px) {
+  .blogPage .contextBox .articleContent {
+    padding-right: 2rem;
+  }
 }
 .blogPage .relatedWorks {
   margin-top: 5%;
